@@ -3,7 +3,7 @@ const { post } = require('request-promise');
 post({
   uri: 'https://api.zenvia.com/v2/channels/sms/messages',
   headers: {
-    'X-API-TOKEN': process.env.YOUR_API_TOKEN
+    'X-API-TOKEN': process.env.API_TOKEN
   },
   body: {
     from: process.env.REMETENTE,

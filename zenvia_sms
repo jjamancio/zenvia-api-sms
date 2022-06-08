@@ -1,0 +1,19 @@
+curl --include \
+     --request POST \
+     --header "Content-Type: application/json" \
+     --header "Authorization: Basic $token" \
+     --header "Accept: application/json" \
+     --data-binary "{
+    \"sendSmsRequest\": {
+        \"from\": \"$remetente\",
+        \"to\": \"$destinatario\",
+        \"schedule\": \"$agendamento\",
+        \"msg\": \"$mensagem\",
+        \"callbackOption\": \"NONE\",
+        \"id\": \"002\",
+        \"aggregateId\": \"1111\",
+        \"flashSms\": false,
+        \"sender\": \"30133\"
+    }
+}" \
+'https://api-rest.zenvia.com/services/send-sms'

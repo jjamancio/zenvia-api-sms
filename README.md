@@ -1,4 +1,4 @@
-# zenvia-node-js
+# zenvia-api-sms
 
 A test zenvia-sms API app 
 

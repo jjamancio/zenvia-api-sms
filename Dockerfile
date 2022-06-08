@@ -1,4 +1,4 @@
 FROM registry.access.redhat.com/ubi8/ubi
+RUN chmod +x zenvia_sms
 ADD zenvia_sms /usr/local/bin
-RUN chmod +x /usr/local/bin/zenvia_sms
 ENTRYPOINT "/usr/local/bin/zenvia_sms"

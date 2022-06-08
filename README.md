@@ -4,8 +4,8 @@ A test zenvia-sms API app
 
 Required variables:
 
-- API_TOKEN
+- TOKEN
 - REMETENTE
 - DESTINATARIO
+- AGENDAMENTO (syntax eg: 2014-08-22T14:55:00)
 - MENSAGEM
-
